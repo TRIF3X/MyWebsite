@@ -1,0 +1,17 @@
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 53.304904051172706vh;
+}
+.mainContent {
+    text-align: center;
+}
+h1 {
+    font-size: 3.65vw;
+    margin: 0.23391812865497075vw 0vw;
+}
+h3 {
+    font-size: 1.56vw;
+    margin: 0.23391812865497075vw 0vw;
+}
