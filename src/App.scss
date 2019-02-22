@@ -1,0 +1,37 @@
+.mainDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 13%;
+  line-height: 3rem;
+  font-weight: 600;
+  color: #e7e1e1;
+
+  .mainName {
+    font-size: 3.5rem;
+  }
+
+  .mainBreak {
+    font-size: 2rem;
+  }
+
+  .mainTitle {
+    font-weight: 400;
+    font-size: 1.3rem;
+  }
+
+  // Main button div
+  .mainButtons { 
+    padding: 1rem 0rem 1rem 0rem;
+      // Actual buttons
+      .mainButtonActual {
+      margin: 0rem .5rem 0rem .5rem;
+    }
+  }
+  // Icons
+  .mainIcon {
+    cursor: pointer;
+    margin: 0rem .6rem 0rem .6rem;
+  }
+  
+}

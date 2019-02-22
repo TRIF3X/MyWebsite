@@ -1,30 +1,39 @@
 import React, { Component } from 'react';
 import { Button, Icon } from 'semantic-ui-react'
-import './App.css';
+import './App.scss';
 
 class App extends Component {
+
+
+  emailUser() {
+    
+  }
+
+
+
   render() {
     return (
         <div className='mainDiv'>
-          <div>
+          <div className='mainName'>
             Conner Hoessly
           </div>
-          <div>______</div>
-          <div>
-            <Button basic inverted>
+          <div className='mainBreak'>______________</div>
+          <div className='mainTitle'>Full Stack Web developer</div>
+          <div className='mainButtons'>
+            <Button basic inverted className='mainButtonActual'>
             Projects
             </Button>
-            <Button basic inverted>
+            <Button basic inverted className='mainButtonActual'>
             About
             </Button>
-            <Button basic inverted>
+            <Button basic inverted className='mainButtonActual'>
             Resume
             </Button>
           </div>
           <div>
-            <Icon circular className='black github' size='tiny'/>
-            <Icon circular className='black linkedin' size='tiny'/>
-            <Icon circular className='black mail' size='tiny'/>
+            <Icon circular name='black github' size='large' className='mainIcon'/>
+            <Icon circular name='black linkedin' size='large' className='mainIcon'/>
+            <Icon circular name='black mail' size='large' className='mainIcon'/>
           </div>
         </div>
     );
