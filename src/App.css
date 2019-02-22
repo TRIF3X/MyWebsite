@@ -1,4 +1,7 @@
-.App {
-  text-align: center;
+.mainDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 14%;
+  font-size: 4rem;
+  color: #e7e1e1;
 }
-

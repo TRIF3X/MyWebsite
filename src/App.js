@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
-import Header from './Header/Header.js'
-import MainPage from './MainContent/mainPage.js'
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-        <div>
-        <Header />
-        <MainPage />
+        <div className='mainDiv'>
+          Conner Hoessly<br/>
+          _____
         </div>
     );
   }
