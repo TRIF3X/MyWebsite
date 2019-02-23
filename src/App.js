@@ -5,10 +5,17 @@ import './App.scss';
 class App extends Component {
 
 
-  emailUser() {
-    
+  emailMe() {
+    window.location.href = `mailto:hoessly.conner@gmail.com`
   }
 
+  linkedIn() {
+    window.open("https://www.linkedin.com/in/conner-hoessly-0970b38a/", "_blank")
+  }
+
+  github() {
+    window.open("https://github.com/TRIF3X", "_blank")
+  }
 
 
   render() {
@@ -31,9 +38,9 @@ class App extends Component {
             </Button>
           </div>
           <div>
-            <Icon circular name='black github' size='large' className='mainIcon'/>
-            <Icon circular name='black linkedin' size='large' className='mainIcon'/>
-            <Icon circular name='black mail' size='large' className='mainIcon'/>
+            <Icon onClick={() => this.github()} circular name='black github' size='large' className='mainIcon'/>
+            <Icon onClick={() => this.linkedIn()} circular name='black linkedin' size='large' className='mainIcon'/>
+            <Icon onClick={() => this.emailMe()} circular name='black mail' size='large' className='mainIcon'/>
           </div>
         </div>
     );
