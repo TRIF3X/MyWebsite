@@ -38,9 +38,9 @@ class App extends Component {
             </Button>
           </div>
           <div>
-            <Icon onClick={() => this.github()} circular name='black github' size='large' className='mainIcon'/>
-            <Icon onClick={() => this.linkedIn()} circular name='black linkedin' size='large' className='mainIcon'/>
-            <Icon onClick={() => this.emailMe()} circular name='black mail' size='large' className='mainIcon'/>
+            <Icon onClick={() => this.github()} circular name='github' color='black' size='large' className='mainIcon' />
+            <Icon onClick={() => this.linkedIn()} circular name='linkedin' color='black' size='large' className='mainIcon'/>
+            <Icon onClick={() => this.emailMe()} circular name='mail' color='black' size='large' className='mainIcon'/>
           </div>
         </div>
     );

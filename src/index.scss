@@ -6,13 +6,18 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: url('./Image/adventure-clouds-crater-1643113.jpg') no-repeat center center fixed;
+  background: url('./Image//Webp.net-resizeimage.jpg') no-repeat center fixed;
   background-size: cover;
   height: fit-content;
+
+  @media(max-width: 1000){
+    background: url('./Image/Webp.net-resizeimage\ \(1\).jpg') no-repeat center fixed;
+  }
+
+  @media(max-width: 800){
+    background: url('./Image/Webp.net-resizeimage\ \(2\).jpg') no-repeat center fixed;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
+
 
