@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Projects from './Views/Projects.js'
 import { Button, Icon } from 'semantic-ui-react'
 import './App.scss';
 
@@ -27,9 +28,7 @@ class App extends Component {
           <div className='mainBreak'>______________</div>
           <div className='mainTitle'>Full Stack Web developer</div>
           <div className='mainButtons'>
-            <Button basic inverted className='mainButtonActual'>
-            Projects
-            </Button>
+            <Projects/>
             <Button basic inverted className='mainButtonActual'>
             About
             </Button>
