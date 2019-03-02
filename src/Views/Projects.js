@@ -1,6 +1,6 @@
 import React from 'react'
 import Backpaca from '../Image/backpaca_home.PNG'
-import { Button, Modal, Image, Header } from 'semantic-ui-react'
+import { Button, Modal, Image } from 'semantic-ui-react'
 
 const Projects = () => (
   <Modal trigger={
