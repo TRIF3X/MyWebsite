@@ -35,3 +35,14 @@
   }
   
 }
+
+  // Modal
+  .ui.modal {
+    top: 17%;
+    font-size: 1.3rem;
+
+    // Image in modal
+    .ui.image {
+      cursor: pointer;
+    }
+  }

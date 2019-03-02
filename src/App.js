@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Projects from './Views/Projects.js'
-import { Button, Icon } from 'semantic-ui-react'
+import About from './Views/About.js'
+import Resume from './Views/Resume.js'
+import { Icon } from 'semantic-ui-react'
 import './App.scss';
 
 class App extends Component {
@@ -29,12 +31,8 @@ class App extends Component {
           <div className='mainTitle'>Full Stack Web developer</div>
           <div className='mainButtons'>
             <Projects/>
-            <Button basic inverted className='mainButtonActual'>
-            About
-            </Button>
-            <Button basic inverted className='mainButtonActual'>
-            Resume
-            </Button>
+            <About />
+            <Resume />
           </div>
           <div>
             <Icon onClick={() => this.github()} circular name='github' color='black' size='large' className='mainIcon' />
