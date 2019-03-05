@@ -13,8 +13,8 @@ const Resume = () => (
     Resume
     </Button>
     }>
-    {width < 600  ? 
-    <div>
+    {width > 600  ? 
+    <div className='mobileResume'>
       View my hosted resume <a href="https://resume.creddle.io/embed/bgshrnisard" target="_blank" rel="noopener noreferrer">here</a>
     </div>:
     <Iframe 
