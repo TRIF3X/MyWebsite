@@ -24,7 +24,7 @@
   .mainButtons { 
     padding: 1rem 0rem 1rem 0rem;
       // Actual buttons
-      .mainButtonActual {
+    .mainButtonActual {
       margin: 0rem .5rem 0rem .5rem;
     }
   }
@@ -44,6 +44,15 @@
   // Image in modal
   .ui.image {
     cursor: pointer;
+  }
+  .mobileResume {
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+    padding: .5rem 0rem;
+  }
+  #document .document-container.pages{
+    margin: 20px;
   }
 
 }
