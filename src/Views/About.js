@@ -1,5 +1,6 @@
 import React from 'react'
-import { Button, Modal } from 'semantic-ui-react'
+import Me from '../Image/IMG_1231.jpg'
+import { Button, Modal, Image } from 'semantic-ui-react'
 
 const About = () => (
   <Modal
@@ -7,11 +8,9 @@ const About = () => (
     <Button basic inverted className='mainButtonActual'>
     About
     </Button>
-    }
-    header='Reminder!'
-    content='Call Benjamin regarding the reports.'
-    actions={['Snooze', { key: 'done', content: 'Done', positive: true }]}
-  />
+    }>
+    <Image centered size='medium' src={Me} />
+  </Modal>
 )
 
 export default About
