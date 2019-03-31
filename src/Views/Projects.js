@@ -4,7 +4,9 @@ import WeatherAPI from '../Image/weatherAPI.PNG'
 import { Button, Modal, Image } from 'semantic-ui-react'
 
 const Projects = () => (
-  <Modal trigger={
+  <Modal
+  className='scrolling'
+  trigger={
     <Button basic inverted className='mainButtonActual'>
     Projects
     </Button>

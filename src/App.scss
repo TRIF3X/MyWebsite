@@ -38,16 +38,18 @@
 
 // About me page
 .ui.active.aboutMeModal {
-
-      .aboutMeImage {
-        padding: 2%;
-      }
+    .aboutMeImage {
+      padding: 2%;
+    }
   }
 
 // Modal
 .ui.modal {
   top: 5%;
   font-size: 1.3rem;
+    @media (max-width: 700px) {
+      font-size: 1rem;
+    }
 
   // Image in modal
   .ui.image {
@@ -59,9 +61,8 @@
     font-size: 2rem;
     padding: .5rem 0rem;
   }
-  #document .document-container.pages{
-    margin: 20px;
-  }
 
 }
+
+
 
