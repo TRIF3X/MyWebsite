@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Projects from './Views/Projects.js'
 import About from './Views/About.js'
 import Resume from './Views/Resume.js'
+import MobileProject from './Views/MobileProject.js'
+import MobileAbout from './Views/MobileAbout.js'
 import { Icon } from 'semantic-ui-react'
 import './App.scss';
 
@@ -29,11 +31,19 @@ class App extends Component {
           </div>
           <div className='mainBreak'>______________</div>
           <div className='mainTitle'>Full Stack Web developer</div>
+          {window.innerWidth < 600 ? 
+          <div className='mainButtons'>
+            <MobileProject/>
+            <MobileAbout />
+            <Resume /> 
+          </div>
+            :
           <div className='mainButtons'>
             <Projects/>
             <About />
             <Resume />
           </div>
+          }
           <div>
             <Icon onClick={() => this.github()} name='github' color='black' size='big' className='mainIcon' />
             <Icon onClick={() => this.linkedIn()} name='linkedin' color='black' size='big' className='mainIcon'/>

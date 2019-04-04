@@ -10,7 +10,8 @@ const Projects = () => (
     <Button basic inverted className='mainButtonActual'>
     Projects
     </Button>
-  }>
+  } 
+  closeIcon>
   {/* Backpaca */}
   <Modal.Header>Backpaca</Modal.Header>
   <Modal.Content image>

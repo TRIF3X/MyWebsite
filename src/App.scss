@@ -37,7 +37,7 @@
 }
 
 // About me page
-.ui.active.aboutMeModal {
+.ui.active.scrolling {
     .aboutMeImage {
       padding: 2%;
       width: 3000px;
@@ -61,6 +61,9 @@
     font-weight: 600;
     font-size: 2rem;
     padding: .5rem 0rem;
+  }
+  .scrolling.content {
+    max-height: 90%;
   }
 
 }
