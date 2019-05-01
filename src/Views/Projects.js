@@ -13,7 +13,7 @@ const Projects = () => (
   } 
   closeIcon>
   {/* Backpaca */}
-  <Modal.Header>Backpaca</Modal.Header>
+  <Modal.Header onClick={() => window.open("https://backpaca.app/", "_blank")}>Backpaca</Modal.Header>
   <Modal.Content image>
     <Image wrapped size='big' src={Backpaca} onClick={() => window.open("https://backpaca.app/", "_blank")} />
     <Modal.Description>
@@ -25,7 +25,7 @@ const Projects = () => (
     </Modal.Description>
   </Modal.Content>
   {/* WeatherAPI */}
-  <Modal.Header>WeatherAPI</Modal.Header>
+  <Modal.Header onClick={() => window.open("https://gallant-albattani-4f5744.netlify.com/", "_blank")}>WeatherAPI</Modal.Header>
   <Modal.Content image>
     <Image wrapped size='medium' src={WeatherAPI} onClick={() => window.open("https://gallant-albattani-4f5744.netlify.com/", "_blank")} />
     <Modal.Description>
