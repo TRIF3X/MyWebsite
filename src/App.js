@@ -8,6 +8,22 @@ import { Icon } from 'semantic-ui-react'
 import './App.scss';
 
 class App extends Component {
+  state = {
+    windowWidth: undefined
+  }
+
+  handleResize = () => this.setState({
+    windowWidth: window.innerWidth
+  })
+
+  componentDidMount() {
+    this.handleResize();
+    window.addEventListener('resize', this.handleResize)
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleResize)
+  }
 
 
   emailMe() {
@@ -31,17 +47,17 @@ class App extends Component {
           </div>
           <div className='mainBreak'>______________</div>
           <div className='mainTitle'>Full Stack Web developer</div>
-          {window.innerWidth < 600 ? 
+          {this.state.windowWidth < 600 ? 
           <div className='mainButtons'>
             <MobileProject/>
             <MobileAbout />
-            <Resume /> 
+            <Resume width={this.state.windowWidth} /> 
           </div>
             :
           <div className='mainButtons'>
             <Projects/>
             <About />
-            <Resume />
+            <Resume width={this.state.windowWidth} />
           </div>
           }
           <div>

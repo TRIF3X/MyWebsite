@@ -5,6 +5,7 @@ import { Button, Modal, Image, ModalContent } from 'semantic-ui-react'
 
 const Projects = () => (
   <Modal
+  style={{height: '100%'}}
   className='scrolling'
   trigger={
     <Button basic inverted className='mainButtonActual'>
@@ -15,7 +16,7 @@ const Projects = () => (
   {/* Backpaca */}
   <ModalContent scrolling={true}>
   <Modal.Header className='ui large header'>Backpaca</Modal.Header>
-  <Modal.Content image>
+  <Modal.Content image >
     <Image wrapped size='big' src={Backpaca} onClick={() => window.open("https://backpaca.app/", "_blank")} />
     <Modal.Description>
       <p>Backpaca is an web application that allows users to brag about their travel experiences and plan future adventures with their friends.</p>
