@@ -31,7 +31,7 @@ const Projects = () => (
   <Modal.Content image>
     <Image wrapped size='medium' src={WeatherAPI} onClick={() => window.open("https://gallant-albattani-4f5744.netlify.com/", "_blank")} />
     <Modal.Description>
-      <p>WeatherAPI is a simple app that allows a user to enter their zip code and receive the current weather along with a few other details.</p>
+      <p>WeatherAPI is a web application that allows a user to enter their zip code and receive their local current weather along with a few other details. Built using React on the front end with Semanic-UI for styling and Axios to interact with the API.</p>
         <h5>
           Front-End: React, Axios, Semantic-ui<br/>
         </h5>
